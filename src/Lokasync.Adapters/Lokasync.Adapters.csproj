@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AssetsTools.NET" Version="3.0.5" />
+    <PackageReference Include="AssetsTools.NET.MonoCecil" Version="3.0.4" />
+    <PackageReference Include="CUE4Parse" Version="[1.2.2]" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lokasync.Core\Lokasync.Core.csproj" />
+  </ItemGroup>
+</Project>

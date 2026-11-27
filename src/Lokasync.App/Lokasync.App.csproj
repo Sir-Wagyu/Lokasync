@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lokasync.Core\Lokasync.Core.csproj" />
+    <ProjectReference Include="..\Lokasync.Sanitizer\Lokasync.Sanitizer.csproj" />
+    <ProjectReference Include="..\Lokasync.Translator\Lokasync.Translator.csproj" />
+    <ProjectReference Include="..\Lokasync.Adapters\Lokasync.Adapters.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <LangVersion>12</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.11" />
+    <PackageReference Include="AssetsTools.NET" Version="3.0.5" />
+    <PackageReference Include="CUE4Parse" Version="1.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Lokasync.Core\Lokasync.Core.csproj" />
+    <ProjectReference Include="..\..\src\Lokasync.Sanitizer\Lokasync.Sanitizer.csproj" />
+    <ProjectReference Include="..\..\src\Lokasync.Translator\Lokasync.Translator.csproj" />
+    <ProjectReference Include="..\..\src\Lokasync.Adapters\Lokasync.Adapters.csproj" />
+    <ProjectReference Include="..\..\src\Lokasync.App\Lokasync.App.csproj" />
+  </ItemGroup>
+
+</Project>
